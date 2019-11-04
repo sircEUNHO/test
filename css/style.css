@@ -1,0 +1,157 @@
+/* Imports */
+
+/* Variable declaration for Root */
+:root {
+  --card-title-size: 2rem;
+  --section-space: 30px;
+  --image-circle-size: 9rem;
+  --image-circle-font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+/* Start Here */
+body {
+
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+nav.navbar-light .navbar-brand {
+  color: #f5cd15;
+}
+
+nav.navbar-light .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.banner {
+  height: 50vh;
+  background: url(../images/bg.jpg) no-repeat;
+  background-position: center 28%;
+  background-size: cover;
+  margin-bottom: var(--section-space);
+}
+
+.banner h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: 'Satisfy', cursive;
+  text-shadow: 0px 1px 4px #000;
+}
+
+.moods {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+.moods .moods__item {
+  padding: 15px;
+}
+
+.image--circle {
+  height: var(--image-circle-size);
+  width: var(--image-circle-size);
+  font-size: var(--image-circle-font-size);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-size: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 0px 1px 2px #000;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.58);
+}
+
+.image--circle:hover {
+  color: white;
+}
+
+.image--circle.post-1 {
+  background-image: url('../images/c5.jpg'); 
+}
+
+.image--circle.post-2 {
+  background-image: url('../images/c3.jpg'); 
+}
+
+.cards {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+.card {
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.card .card__title {
+  font-family: 'Satisfy', cursive;
+  font-size: var(--card-title-size);
+}
+
+.recent-posts {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+.recent-posts .title {
+  color: #27bbf1;
+  text-transform: uppercase;
+}
+
+.recent-posts .card {
+  font-size: 1rem;
+}
+
+.recent-posts .card .post-date{
+  margin-bottom: 0px;
+}
+
+.about-me {
+  background: url('../images/about.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0px;
+  color: white;
+  text-shadow: 0px 1px 2px #000;
+}
+
+.about-me h1 {
+  font-family: 'Satisfy', cursive;
+}
+
+.about-me .btn {
+  color: white;
+  border-radius: 0px;
+  border: 2px solid white;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.58);
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  :root {
+    --card-title-size: 1.5rem;
+    --section-space: 15px;
+    --image-circle-size: 7rem;
+    --image-circle-font-size: 1rem;
+  }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  .about-me__content {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
